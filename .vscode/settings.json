@@ -1,0 +1,60 @@
+{
+    "python.pythonPath": ".venv/bin/python",
+    "python.envFile": "${workspaceFolder}/.env",
+    "powershell.integratedConsole.showOnStartup": true,
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/.mypy_cache": true,
+      "**/.benchmarks": true,
+      // "**/.venv": true,
+      "**/node_modules": true,
+      "**/public": true,
+      "**/.pytest_cache": true,
+      "**/__pycache__": true
+    },
+    "[python]": {
+      "editor.detectIndentation": false,
+      "editor.insertSpaces": true,
+      "editor.tabSize": 4,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true // 코드 저장 시 import 자동 정렬
+      }
+    },
+    "[yaml]": {
+      "editor.tabSize": 2,
+      "editor.detectIndentation": false,
+      "editor.insertSpaces": true
+    },
+    "[jsonc]": {
+      "editor.tabSize": 2,
+      "editor.detectIndentation": false,
+      "editor.insertSpaces": true
+    },
+    // "editor.fontFamily": "D2Coding",
+    "editor.formatOnSave": true,
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.pycodestyleArgs": [
+      "--max-line-length=80"
+    ],
+    "python.linting.pycodestyleEnabled": true,
+    "python.testing.pytestArgs": [
+      "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+      "-l",
+      "80"
+    ],
+    "files.insertFinalNewline": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.languageServer": "Pylance"
+  }
